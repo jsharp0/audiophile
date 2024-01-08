@@ -26,5 +26,4 @@ import { ButtonComponent } from '../../shared/button/button.component';
 export class HeroSectionComponent {
   faClose = faClose;
   open = false;
-  constructor() {}
 }

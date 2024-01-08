@@ -156,20 +156,17 @@ export class ProductService {
     {
       title: 'Headphones',
       routerLink: 'headphones',
-      image:
-        '../../assets/shared/desktop/image-category-thumbnail-headphones.png',
+      image: 'assets/shared/desktop/image-category-thumbnail-headphones.png',
     },
     {
       title: 'Speakers',
       routerLink: 'speakers',
-      image:
-        '../../assets/shared/desktop/image-category-thumbnail-speakers.png',
+      image: 'assets/shared/desktop/image-category-thumbnail-speakers.png',
     },
     {
       title: 'Earphones',
       routerLink: 'earphones',
-      image:
-        '../../assets/shared/desktop/image-category-thumbnail-earphones.png',
+      image: 'assets/shared/desktop/image-category-thumbnail-earphones.png',
     },
   ];
   cart: Array<{ item: string; quantity: number }> = [];
