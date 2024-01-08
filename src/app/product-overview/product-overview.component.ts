@@ -25,7 +25,7 @@ import { NgxMaskModule } from 'ngx-mask';
         <img
           class="product-img"
           [src]="
-            '../assets/' +
+            'assets/' +
             product.imagePath +
             '/desktop/image-category-page-preview.jpg'
           "
@@ -66,21 +66,21 @@ import { NgxMaskModule } from 'ngx-mask';
           <img
             class="gallery-image-1"
             [src]="
-              '../assets/' + product.imagePath + '/desktop/image-gallery-1.jpg'
+              'assets/' + product.imagePath + '/desktop/image-gallery-1.jpg'
             "
           />
 
           <img
             class="gallery-image-2"
             [src]="
-              '../assets/' + product.imagePath + '/desktop/image-gallery-2.jpg'
+              'assets/' + product.imagePath + '/desktop/image-gallery-2.jpg'
             "
           />
 
           <img
             class="gallery-image-3"
             [src]="
-              '../assets/' + product.imagePath + '/desktop/image-gallery-3.jpg'
+              'assets/' + product.imagePath + '/desktop/image-gallery-3.jpg'
             "
           />
         </div>
@@ -102,7 +102,7 @@ import { NgxMaskModule } from 'ngx-mask';
         <div>
           <div class="summary-product" *ngFor="let cartItem of cart">
             <img
-              src="../../assets/{{
+              src="assets/{{
                 cartItem.item
               }}/desktop/image-category-page-preview.jpg"
             />

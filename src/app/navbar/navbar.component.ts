@@ -14,9 +14,9 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
         <img
           (click)="open = true"
           class="nav-toggle"
-          src="../assets/shared/tablet/icon-hamburger.svg"
+          src="assets/shared/tablet/icon-hamburger.svg"
         />
-        <img class="navbar-brand" src="../assets/shared/desktop/logo.svg" />
+        <img class="navbar-brand" src="assets/shared/desktop/logo.svg" />
         <ul class="links">
           <li [routerLink]="['/home']">Home</li>
           <li [routerLink]="['/headphones']">Headphones</li>
@@ -26,7 +26,7 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
         <img
           class="cart"
           [routerLink]="['/checkout']"
-          src="../assets/shared/desktop/icon-cart.svg"
+          src="assets/shared/desktop/icon-cart.svg"
         />
       </div>
     </nav>
@@ -44,5 +44,4 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 export class NavBarComponent {
   faClose = faClose;
   open = false;
-  constructor() {}
 }

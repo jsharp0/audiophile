@@ -28,7 +28,7 @@ import { CategoryListComponent } from '../shared/category-list/category-list.com
       >
         <img
           [src]="
-            '../assets/' +
+            'assets/' +
             product.imagePath +
             '/desktop/image-category-page-preview.jpg'
           "
