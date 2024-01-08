@@ -1,0 +1,126 @@
+@import "../../styles.scss";
+
+nav {
+  background-color: rgb(25, 25, 25);
+  padding: var(--padding-body-top) var(--padding-body-x);
+}
+.nav {
+  border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+  width: 100%;
+
+  img {
+    align-self: center;
+  }
+  .links {
+    color: white;
+    font-size: var(--subtitle-font-size);
+    font-weight: $font-weight-bold;
+    line-height: $body-line-height;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    list-style: none;
+
+    li {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .nav {
+    justify-content: space-between;
+  }
+  .navlinks-popover {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: var(--subtitle-font-size);
+    font-weight: $font-weight-bold;
+    line-height: $body-line-height;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    text-align: right;
+    position: absolute;
+    width: 97%;
+    top: 0;
+    padding: 2rem 1rem;
+
+    li {
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+  .links {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .links {
+    display: none;
+  }
+
+  .navlinks-popover {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: var(--subtitle-font-size);
+    font-weight: $font-weight-bold;
+    line-height: $body-line-height;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    text-align: right;
+    position: absolute;
+    width: 85%;
+    top: 0;
+    padding: 2rem 10%;
+
+    li {
+      text-align: center;
+      margin: 1rem;
+      
+    }
+  }
+  .navbar-brand {
+    margin-left: 2.5rem;
+  }
+
+  fa-icon, img {
+    padding-bottom: 1rem;
+  }
+  
+  .cart {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    justify-content: space-between;
+    .links {
+      display: flex;
+    }
+    .cart {
+      margin: 0;
+    }
+
+    .nav-toggle {
+      display: none;
+    }
+  }
+
+  .navlinks-popover {
+    display: none;
+  }
+}
+
+li,
+fa-icon,
+img {
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+  }
+}

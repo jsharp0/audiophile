@@ -1,0 +1,98 @@
+@import "../../../styles.scss";
+
+.products {
+  padding: var(--padding-body-top) var(--padding-body-x);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .zx9-speaker {
+    border-radius: 0.5rem;
+    background-color: $primary;
+    flex-basis: 100%;
+    background-image: url("assets/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    padding: 6rem 6rem 0 6rem;
+    p {
+      opacity: 0.75;
+    }
+    img {
+      width: 25.63963rem;
+      margin-bottom: -1.5rem;
+    }
+
+    .text-content {
+      margin: auto;
+      margin-left: 8rem;
+    }
+  }
+
+  .zx7-speaker {
+    flex-basis: 100%;
+    width: 100%;
+    background-image: url("assets/home/desktop/image-speaker-zx7.jpg");
+    padding: 6rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+
+    h4 {
+      margin-bottom: 1.5rem;
+    }
+    .flex-50 {
+      flex-basis: 50%;
+    }
+  }
+
+  .earphones {
+    background-image: url("assets/home/desktop/image-earphones-yx1.jpg");
+    height: 20rem;
+    border-radius: 0.5rem;
+    flex-basis: 49%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .yx1-earphones {
+    height: 20rem;
+    background-color: $secondary;
+    border-radius: 0.5rem;
+    flex-basis: 49%;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+
+    h4 {
+      margin-bottom: 1.5rem;
+    }
+
+    .content {
+      height: fit-content;
+      padding: 6rem;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .products {
+    .zx9-speaker {
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+      background-position: center;
+
+      .text-content {
+        margin: 4rem 0;
+      }
+    }
+    .earphones,
+    .yx1-earphones {
+      flex-basis: 100%;
+    }
+
+    .yx1-earphones {
+      margin-top: 2rem;
+    }
+  }
+}

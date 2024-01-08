@@ -1,0 +1,54 @@
+@import "../../../styles.scss";
+.product-card {
+  width: fit-content;
+  max-width: 21.875rem;
+  height: 15rem;
+  background-color: $secondary;
+  border-radius: 0.5rem;
+  margin: 1rem;
+
+  .card-content {
+    position: relative;
+    top: -5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img,
+    h6 {
+      text-align: center;
+      flex-basis: 100%;
+    }
+
+    h6 {
+      margin-bottom: 1rem;
+    }
+
+    h6,
+    app-button {
+      position: relative;
+      top: -2rem;
+    }
+
+    .image-container {
+      img {
+        width: 15rem;
+      }
+      height: 15rem;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .product-card {
+    margin: 3rem 0.5rem;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .product-card {
+    margin: 3rem 0.5rem;
+  }
+}
+
+@media (min-width: $tablet) {
+}

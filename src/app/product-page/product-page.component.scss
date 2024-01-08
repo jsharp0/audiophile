@@ -1,0 +1,53 @@
+@import "../../styles.scss";
+
+.heading {
+  background-color: rgb(25, 25, 25);
+  color: white;
+
+  h2 {
+    padding: 2rem 0 4rem;
+  }
+}
+
+.product {
+  padding: var(--padding-body-top) var(--padding-body-x);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  img,
+  div {
+    flex-basis: 40%;
+    max-width: 40%;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    margin-bottom: 0;
+  }
+
+  p {
+    opacity: 0.5;
+  }
+}
+
+.left-image {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: $tablet) {
+  .product {
+    justify-content: center;
+    text-align: center;
+    img,
+    div {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    img,
+    .subtitle {
+      margin-bottom: 1rem;
+    }
+  }
+}

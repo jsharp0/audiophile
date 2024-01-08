@@ -1,0 +1,156 @@
+@import "../../styles.scss";
+.product {
+  padding: var(--padding-body-top) var(--padding-body-x);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  .product-img,
+  .product-name {
+    flex-basis: 40%;
+    max-width: 40%;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    margin-bottom: 0;
+  }
+
+  .price {
+    opacity: 1;
+    font-weight: bold;
+    margin: 2.5rem 0;
+  }
+
+  app-number-input {
+    margin-right: 1rem;
+  }
+  p {
+    opacity: 0.5;
+  }
+
+  .product-info {
+    margin-top: 7.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7.5rem;
+
+    h3 {
+      margin-bottom: 3rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      color: rgba($color: black, $alpha: 0.5);
+      margin: 1rem 0;
+    }
+    .quantity {
+      margin-right: 1rem;
+      color: $primary;
+      font-weight: bold;
+    }
+  }
+
+  .image-gallery {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    .gallery-image-3 {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+}
+.dialog {
+  padding: 2rem;
+
+  .heading {
+    p {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+
+  .summary-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-lstart;
+    margin: 1.5rem 0;
+
+    img {
+      max-width: 4rem;
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .name-and-price {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      span {
+        flex-basis: 100%;
+      }
+    }
+    span {
+      font-weight: bold;
+      opacity: 0.5;
+    }
+    .product-name {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .product {
+    .product-img,
+    .product-name {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    .product-info {
+      grid-template-columns: 1fr;
+
+      .in-the-box {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .product {
+    .product-info {
+      // grid-template-columns: 1fr;
+
+      .in-the-box {
+        margin-top: 0rem;
+      }
+    }
+  }
+}

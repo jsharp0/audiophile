@@ -1,0 +1,18 @@
+@import "../../styles.scss";
+
+.card-container {
+  margin: 5rem 0;
+  padding: var(--padding-body-top) var(--padding-body-x);
+}
+
+@media (max-width: $mobile) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+}

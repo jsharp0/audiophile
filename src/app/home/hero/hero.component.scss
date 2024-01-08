@@ -1,0 +1,54 @@
+@import "../../../styles.scss";
+
+.hero-section {
+  padding: var(--padding-body-top) var(--padding-body-x);
+  max-width: 100%;
+  color: white;
+  background-image: url("assets/home/desktop/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 35rem;
+  p {
+    opacity: 0.75;
+    margin-bottom: 1.75rem;
+  }
+
+  .subtitle-light {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: $mobile) {
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url("assets/home/mobile/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .product {
+      margin-top: 6.25rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url("assets/home/tablet/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .product {
+      margin-top: 6.25rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .product {
+    width: 50%;
+    margin-top: 8rem;
+  }
+}

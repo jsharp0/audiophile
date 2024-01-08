@@ -1,0 +1,59 @@
+button {
+  font-family: $font-family;
+  font-size: var(--subtitle-font-size);
+  letter-spacing: 0.0625rem;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &.primary {
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+    height: 45px;
+    &:hover {
+      background-color: $primary-hover;
+      border: 1px solid $primary-hover;
+    }
+  }
+
+  &.dark {
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &.outline {
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+
+  &.link {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    fa-icon {
+      color: $primary;
+      margin-left: 0.5rem;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+    }
+  }
+}

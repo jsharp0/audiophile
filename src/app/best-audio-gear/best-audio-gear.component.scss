@@ -1,0 +1,36 @@
+@import "../../styles.scss";
+
+.container {
+    margin: 5rem 0;
+    padding: var(--padding-body-top) var(--padding-body-x);
+    max-width: 1200px;
+    
+    h2 span {
+        font-size: var(--h2-font-size);
+        color: $primary;
+    }
+
+    img {
+        margin-left: 8rem;
+        margin-top: 0;
+        max-width: 100%;
+    }
+}
+
+
+  @media (max-width: $tablet) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column-reverse;
+
+        img {
+            margin-left: 0;
+            margin-bottom: 3rem;
+        }
+    }
+  }
+  
+
+  

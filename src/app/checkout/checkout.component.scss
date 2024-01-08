@@ -1,0 +1,224 @@
+@import "../../styles.scss";
+
+.checkout {
+  background-color: $secondary;
+  padding: var(--padding-body-top) var(--padding-body-x);
+
+  app-button {
+    flex-basis: 100%;
+  }
+  form {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .category-label {
+      color: $primary;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: block;
+      flex-basis: 100%;
+      margin-top: 3rem;
+    }
+
+    .field {
+      display: flex;
+      flex-wrap: wrap;
+      label {
+        font-weight: bold;
+        font-size: 0.75rem;
+        flex-basis: 100%;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+      }
+      input {
+        align-self: center;
+        width: 100%;
+      }
+    }
+  }
+
+  .summary {
+    background-color: white;
+    padding: 2rem;
+    height: fit-content;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+
+    .empty-cart {
+      opacity: 0.5;
+      font-style: italic;
+      width: 200px;
+    }
+    .summary-product {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 1.5rem 0;
+
+      img {
+        max-width: 30%;
+        border-radius: 0.5rem;
+        margin-right: 1rem;
+      }
+
+      .name-and-price {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        span {
+          flex-basis: 100%;
+        }
+      }
+      span {
+        font-weight: bold;
+        opacity: 0.5;
+        min-width: 50px;
+      }
+      .product-name {
+        opacity: 1;
+      }
+    }
+
+    .info-group {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+
+      .summary-label {
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+
+      .amount {
+        font-weight: bold;
+      }
+
+      &.grand-total {
+        margin: 1rem 0;
+
+        .amount {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+dialog {
+  border: none;
+  padding: 3rem;
+  border-radius: 0.5rem;
+
+  p {
+    opacity: 0.5;
+  }
+
+  .confirmation {
+    .confirmation-items {
+      background-color: $secondary;
+      height: 100%;
+      flex-wrap: wrap;
+      padding: 1.5rem;
+      border-radius: 0.5rem 0 0 0.5rem;
+
+      .item-details {
+        width: 100%;
+      }
+      p {
+        font-weight: bold;
+        margin: 0;
+
+        &.name {
+          opacity: 1;
+        }
+
+        &.full-width {
+          text-align: center;
+        }
+      }
+    }
+
+    .quantity {
+      opacity: 0.5;
+      font-weight: bold;
+    }
+
+    .total {
+      color: white;
+      background-color: black;
+      border-radius: 0 0.5rem 0.5rem 0;
+
+      padding: 2rem;
+      align-self: stretch;
+      p {
+        opacity: 1;
+        margin: 0;
+      }
+      h6 {
+        opacity: 0.5;
+        margin-bottom: 0.5rem;
+      }
+    }
+    img {
+      max-width: 2.5rem;
+    }
+  }
+}
+
+::backdrop {
+  background-color: black;
+  opacity: 0.4;
+}
+
+.full-width {
+  flex-basis: 100%;
+}
+
+.half-width,
+app-radio-group {
+  flex-basis: 49%;
+}
+
+@media (max-width: $mobile) {
+  .checkout div {
+    flex-wrap: wrap;
+
+    form,
+    .summary {
+      flex-basis: 100%;
+    }
+
+    .half-width {
+      flex-basis: 100%;
+    }
+
+    .summary {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .checkout div {
+    flex-wrap: wrap;
+
+    form,
+    .summary {
+      flex-basis: 100%;
+    }
+
+    .half-width {
+      flex-basis: 100%;
+    }
+
+    .summary {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@media (max-width: $mobile) {
+  body {
+    --padding-body-x: 1.5rem;
+    --padding-body-top: 2rem;
+    --padding-body-bottom: 2rem;
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  body {
+    --padding-body-x: 2.5rem;
+    --padding-body-top: 2rem;
+    --padding-body-bottom: 2rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  body {
+    --padding-body-x: 10rem;
+    --padding-body-top: 2rem;
+    --padding-body-bottom: 3rem;
+  }
+}
