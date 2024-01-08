@@ -4,7 +4,7 @@
   padding: var(--padding-body-top) var(--padding-body-x);
   max-width: 100%;
   color: white;
-  background-image: url("assets/home/desktop/image-hero.jpg");
+  background-image: url("/src/assets/home/desktop/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -21,7 +21,7 @@
 @media (max-width: $mobile) {
   .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-      url("assets/home/mobile/image-header.jpg");
+      url("/src/assets/home/mobile/image-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +35,7 @@
 @media (min-width: $mobile) and (max-width: $tablet) {
   .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-      url("assets/home/tablet/image-header.jpg");
+      url("/src/assets/home/tablet/image-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
