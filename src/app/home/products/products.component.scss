@@ -8,7 +8,7 @@
     border-radius: 0.5rem;
     background-color: $primary;
     flex-basis: 100%;
-    background-image: url("assets/home/desktop/pattern-circles.svg");
+    background-image: url("../../../assets/home/desktop/pattern-circles.svg");
     background-repeat: no-repeat;
     color: white;
     display: grid;
@@ -32,7 +32,7 @@
   .zx7-speaker {
     flex-basis: 100%;
     width: 100%;
-    background-image: url("assets/home/desktop/image-speaker-zx7.jpg");
+    background-image: url("../../../assets/home/desktop/image-speaker-zx7.jpg");
     padding: 6rem;
     border-radius: 0.5rem;
     margin: 2rem 0;
@@ -46,7 +46,7 @@
   }
 
   .earphones {
-    background-image: url("assets/home/desktop/image-earphones-yx1.jpg");
+    background-image: url("../../../assets/home/desktop/image-earphones-yx1.jpg");
     height: 20rem;
     border-radius: 0.5rem;
     flex-basis: 49%;

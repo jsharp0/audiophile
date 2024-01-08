@@ -7,12 +7,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent,
-  },
-  {
     path: 'home',
-    redirectTo: '',
+    component: HomeComponent,
   },
   {
     path: 'headphones',
@@ -59,6 +55,7 @@ const routes: Routes = [
     path: 'checkout',
     component: CheckoutComponent,
   },
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
